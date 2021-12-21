@@ -1,0 +1,109 @@
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tableDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tableDiv > p {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.table {
+    width: 85%;
+    border: 0.15rem solid red;
+    border-radius: 1rem;;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btnsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 5rem;
+    margin-top: 1.5rem;
+}
+
+.easyBtn, .mediumBtn, .hardBtn {
+    width: 45%;
+    height: 55%;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.easyBtn:hover, .mediumBtn:hover, .hardBtn:hover {
+    transform: scale(1.05);
+}
+
+.easyBtn {
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+.mediumBtn {
+    background-color: orange;
+    border: 1px solid orange;
+}
+
+.hardBtn {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.loaderDiv {
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@media only screen and (min-width: 750px){
+    .easyBtn, .mediumBtn, .hardBtn{
+        width: 25%;
+        height: 65%;
+    }
+
+    .btnsDiv{
+        justify-content: space-evenly;
+    }
+
+    .table{
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .tableDiv > p{
+        font-size: 2.9rem;
+        margin: 3rem;
+    }
+}

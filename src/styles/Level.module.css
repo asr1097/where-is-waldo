@@ -1,0 +1,119 @@
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.imgDiv {
+    position: relative;
+}
+
+.levelImg {
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    z-index: 2;
+}
+
+.charsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+}
+
+.chars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.15rem solid red;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    max-width: fit-content;
+}
+
+.findThem {
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.char {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    padding: 0.5rem;
+    max-width: 25%;
+}
+
+.char > p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+.char > img {
+    height: 6em;
+    width: 3.8em;
+}
+
+.onclickDiv {
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    color: #ffffff;
+    width: 10%;
+    min-width: 4.5rem;
+    border-top: 0.05em solid grey;
+    border-left: 0.05em solid grey;
+    border-right: 0.05em solid grey;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+
+.onclickChar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 2.8em;
+    border-bottom: 0.05em solid grey;
+}
+
+.onclickChar:hover {
+    background-color: grey;
+}
+
+.onclickImg {
+    height: 2.3em;
+    width: 1.2em;
+}
+
+.timer {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.timeSpan{
+    font-size: 2.2em;
+}
+
+.infoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 750px){
+
+    .timeSpan{
+        font-size: 2.5rem;
+    }
+}
